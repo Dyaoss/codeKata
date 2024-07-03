@@ -5,7 +5,7 @@ class Solution {
         for (i in 1..count) {
             total += (price * i)
         }
-        answer = -((money - total).toLong())
+        answer = -(money - total)
         if (answer <= 0) return 0
         else return answer
     }
