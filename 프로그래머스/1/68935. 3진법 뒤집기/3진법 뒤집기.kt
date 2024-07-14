@@ -4,8 +4,8 @@ import kotlin.math.sqrt
 class Solution {
     fun solution(n: Int): Int {
         var answer: Int = 0
-        var reversed = MakeBase3(n)
-        var toBase10 = ReverseArray(reversed)
+        var toBase3 = MakeBase3(n)
+        var toBase10 = ReverseArray(toBase3)
         answer = ConvertToBase10(toBase10)
 
         return answer
